@@ -17,8 +17,8 @@ body{
     background-repeat: no-repeat;
     background-position-x: 100px;
     background-position-y: -600px;
-    height: 100vh;
     width: 100%;
+    padding: 50px 70px;
     border-bottom-left-radius: 13%;
     
 }
@@ -257,8 +257,8 @@ small{
 /*-------------------- media queries ----------------------------*/
 @media screen and (max-width: 600px){
     .navbar{
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding-top: 30px;
     }
     nav{
@@ -272,7 +272,7 @@ small{
     }
     .platform{
         text-align: center;
-        margin-top: 20px;
+        margin-top: 70px;
     }
     .platform h1{
         font-size: 45px;
