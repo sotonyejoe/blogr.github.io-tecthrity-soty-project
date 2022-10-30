@@ -4,12 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+   
 }
 body{
-    background: hsl(0, 0%, 90%);
-    
-    
+    background: hsl(0, 0%, 90%);   
 }
 
 .container{
@@ -20,7 +18,7 @@ body{
     background-position-x: 100px;
     background-position-y: -600px;
     height: 100vh;
-    min-width: 100%;
+    width: 100%;
     border-bottom-left-radius: 13%;
     
 }
@@ -173,8 +171,9 @@ a{
 /* <!------------ State of the Art Infasutructure ---------------> */
 #infastructure{
     display: flex;
-    width: 100%;
-    height: 60vh;
+    /* width: 100%;
+    height: 60vh; */
+    padding: 5px 15px;
     margin-top: 150px;
     background:  hsl(237, 17%, 21%);
     background-image: url(images/bg-pattern-circles.svg);
@@ -227,8 +226,7 @@ a{
 
 /* <!------------- Footer ------------> */
 #footer{
-    width: 100%;
-    height:70vh;
+   padding: 40px 60px;
     background:  hsl(237, 17%, 21%);
     border-top-right-radius: 100px;
     margin-top: 70px;
@@ -257,34 +255,29 @@ small{
 }
 
 /*-------------------- media queries ----------------------------*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
     .navbar{
-       
         margin-left: 40px;
         margin-right: 40px;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     nav{
-        display: none;
-        justify-content:space-between;
-        align-items: center;
-        /* margin: 0px 40px;   */
-    }
+        display: none;  
+    }  
     #bugger{
         display: block;
     }
     a, .signup{
-        display: none;
+        display: none  
     }
     .platform{
         text-align: center;
-        margin-top: 30px;
-
+        margin-top: 20px;
     }
     .platform h1{
-       text-align: center;
-        font-size: 40px;
-        font-weight: 500;
+        font-size: 45px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
     .platform p{
         font-family: 'Overpass', sans-serif;
@@ -292,77 +285,111 @@ small{
         font-size: 16px;
         padding-top: 10px;
     }
-
-    /* <!------------ design  for the future ---------------> */
-.design-section{
-    display: block;
-    padding-top: 40px;
-    /* margin-left: 40px; */
-}
-.design-future-text, .design-future-image{
-    flex-basis: 100%;
-}
-#design-future h1{
-    padding-top: 20px;
-    font-size: 30px;
-}
-.first-para{
-    margin-top: 10px;
-}
-.first-para h3{
-    font-size: 36px;
-    text-align: center;
-}
-.first-para p{
-    font-size: 18px;
-    line-height: 24px;
-    padding-top: 20px;
-    text-align: center;
-}
-.second-para h3{
-    font-size: 36px; 
-    padding-top: 30px;
-    text-align: center;
-}
-.second-para p{
-    font-size: 18px;
-    line-height: 24px;
-    padding-top: 20px;
-    text-align: center;
-}
-.design-future-image img{
-    width: 100%;
-    height: auto;
-    margin-left: 10px;
-    margin-top: 100px;
-}
-/* <!------------ State of the Art Infasutructure ---------------> */
+        /* <!------------ design  for the future ---------------> */
+    .design-section{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-items: center;
+        text-align: center;
+    }
+    .design-future-text, .design-future-image{
+        flex-basis: 100%;
+    }
+    .design-future-image{
+        margin-top: 100px;
+    }
+    #design-future h1{
+        padding-top: 50px;
+        font-size: 30px;
+    }
+    .first-para{
+        margin-top: 10px;
+    }
+    .first-para h3{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .first-para p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .second-para h3{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .second-para p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    /* <!------------ State of the Art Infasutructure ---------------> */
 #infastructure{
     display: block;
-    width: 100%;
-    height: 170vh;
-    margin-top: 150px;
+    /* width: 100%;
+    height: 60vh; */
+    padding: 5px 15px;
+    margin-top: 150px;   
+
 }
 .art-infas-image, .art-infas-text{
     flex-basis: 100%;
 }
 .art-infas-image img{
-    width: 100%;
+    width: 70%;
     transform: translateY(-20%);
 }
-.art-infas-text{
-    color: hsl(0, 0%, 100%);
-    font-family: 'Overpass', sans-serif;
-}
 .art-infas-text h3{
-    font-size: 34px;
-    margin-top: 10px;
+    font-size: 30px;
+    padding-top: -50px;
     text-align: center;
 }
 .art-infas-text p{
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
     padding-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* <!------------- Free, open, simple ------------> */
+#free-open-simple{
+    display: block;
+}
+.free-open-simple-img, .free-open-simple-text{
+    flex-basis: 100%;
+}
+.free-open-simple-img img{
+    width: 100%;
+    margin-left: 10px;
+}
+.free-open-simple-text{
+    text-align: center;
+    margin-top: 140px;
+}
+/* <!------------- Footer ------------> */
+
+.footer-container{
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr
+}
+#logo img{
+    width: 100px;
+   
+}
+h4{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+small{
+    display: block;
+    margin-bottom: 20px;
+    
 }
 }
