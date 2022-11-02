@@ -3,8 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   
+    box-sizing: border-box;   
 }
 body{
     background: hsl(0, 0%, 90%);   
@@ -18,14 +17,14 @@ body{
     background-position-x: 100px;
     background-position-y: -600px;
     width: 100%;
-    padding: 50px 70px;
-    border-bottom-left-radius: 13%;
+    height: 100vh;
+    border-bottom-left-radius: 18%;
     
 }
 .navbar{
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
     padding-top: 90px;
     align-items: center;
     justify-content: center
@@ -50,13 +49,14 @@ li{
     display: inline-block;  
     padding: 0px 20px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: #ffff;
     font-weight: 400;
 }
-.button{
+.loginsignup-btn{
     margin-left: auto;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
    
 }
 a{
@@ -68,7 +68,7 @@ a{
 .signup{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
-    margin-left: 20px;
+    margin-left: 40px;
     padding: 8px 18px;
     border-radius: 15px;
     outline: none;
@@ -83,13 +83,13 @@ a{
 .platform h1{
     font-family: 'Overpass', sans-serif;
     color: #fff;
-    font-size: 50px;
+    font-size: 9vmin;
     font-weight: 500;
 }
 .platform p{
     font-family: 'Overpass', sans-serif;
     color: hsl(0, 0%, 100%);
-    font-size: 16px;
+    font-size: 1rem;
     padding-top: 10px;
 }
 .buttons{
@@ -97,7 +97,7 @@ a{
 }
 .forfree, .learnmore{
     padding: 10px 15px;
-    border-radius: 18px;
+    border-radius: 1.125rem;
     outline: none;
     border: none;
     background: #fff; 
@@ -113,7 +113,7 @@ a{
 }
 
 /* <!------------ design  for the future ---------------> */
-#design-future{
+.design-future{
     width: 100%;
 }
 .design-section{
@@ -126,11 +126,11 @@ a{
 .design-future-text, .design-future-image{
     flex-basis: 50%;
 }
-#design-future h1{
+.design-future h1{
     color:  hsl(208, 49%, 24%);
     text-align: center;
     padding-top: 70px;
-    font-size: 24px;
+    font-size: 5vmin;
     font-family: 'Overpass', sans-serif;
 }
 .first-para{
@@ -139,10 +139,10 @@ a{
 .first-para h3{
     color:  hsl(208, 49%, 24%); 
     font-family: 'Overpass', sans-serif;
-    font-size: 20px;
+    font-size: 4vmin;
 }
 .first-para p{
-    font-size: 13px;
+    font-size: 2.5vmin;
     font-family: 'Overpass', sans-serif;
     color: hsl(237, 23%, 32%);
     line-height: 22px;
@@ -151,11 +151,11 @@ a{
 .second-para h3{
     color:  hsl(208, 49%, 24%); 
     font-family: 'Overpass', sans-serif;
-    font-size: 20px; 
+    font-size: 4vmin;
     padding-top: 30px;
 }
 .second-para p{
-    font-size: 13px;
+    font-size: 2.5vmin;
     font-family: 'Overpass', sans-serif;
     color: hsl(237, 23%, 32%);
     line-height: 22px;
@@ -169,7 +169,7 @@ a{
 }
 
 /* <!------------ State of the Art Infasutructure ---------------> */
-#infastructure{
+.infastructure{
     display: flex;
     /* width: 100%;
     height: 60vh; */
@@ -196,11 +196,11 @@ a{
     font-family: 'Overpass', sans-serif;
 }
 .art-infas-text h3{
-    font-size: 26px;
+    font-size: 5vmin;
     margin-top: 70px;
 }
 .art-infas-text p{
-    font-size: 14px;
+    font-size: 2.5vmin;
     font-weight: 300;
     line-height: 22px;
     color: hsl(240, 2%, 79%);
@@ -208,7 +208,7 @@ a{
 }
 
 /* <!------------- Free, open, simple ------------> */
-#free-open-simple{
+.free-open-simple{
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
@@ -225,7 +225,7 @@ a{
 }
 
 /* <!------------- Footer ------------> */
-#footer{
+.footer{
    padding: 40px 60px;
     background:  hsl(237, 17%, 21%);
     border-top-right-radius: 100px;
@@ -255,14 +255,15 @@ small{
 }
 
 /*-------------------- media queries ----------------------------*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 770px){
     .navbar{
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-top: -30px;
     }
     nav{
         display: none;  
+        margin: 0px 10px; 
     }  
     #bugger{
         display: block;
@@ -272,10 +273,10 @@ small{
     }
     .platform{
         text-align: center;
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .platform h1{
-        font-size: 45px;
+        /* font-size: px; */
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -301,29 +302,25 @@ small{
     }
     #design-future h1{
         padding-top: 50px;
-        font-size: 30px;
+       
     }
     .first-para{
         margin-top: 10px;
     }
     .first-para h3{
-        font-size: 30px;
         margin-left: 20px;
         margin-right: 20px;
     }
     .first-para p{
-        font-size: 16px;
         line-height: 24px;
         padding-top: 20px;
         text-align: center;
     }
     .second-para h3{
-        font-size: 30px;
         margin-left: 20px;
         margin-right: 20px;
     }
     .second-para p{
-        font-size: 16px;
         line-height: 24px;
         padding-top: 20px;
         text-align: center;
@@ -345,7 +342,6 @@ small{
     transform: translateY(-20%);
 }
 .art-infas-text h3{
-    font-size: 30px;
     padding-top: -50px;
     text-align: center;
 }
