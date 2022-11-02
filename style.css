@@ -326,7 +326,7 @@ small{
         text-align: center;
     }
     /* <!------------ State of the Art Infasutructure ---------------> */
-#infastructure{
+.infastructure{
     display: block;
     /* width: 100%;
     height: 60vh; */
@@ -338,7 +338,7 @@ small{
     flex-basis: 100%;
 }
 .art-infas-image img{
-    width: 70%;
+    width: 100%;
     transform: translateY(-20%);
 }
 .art-infas-text h3{
